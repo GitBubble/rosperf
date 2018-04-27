@@ -1,0 +1,7 @@
+<library path="lib/libsub_nodelet">
+  <class name="nodelet_test/Sub_nodelet" type="nodelet_test::Sub_nodelet" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>

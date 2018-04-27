@@ -1,0 +1,7 @@
+<library path="lib/libpub_nodelet">
+  <class name="nodelet_test/Pub_nodelet" type="nodelet_test::Pub_nodelet" base_class_type="nodelet::Nodelet">
+    <description> 
+      test publish
+    </description>
+  </class>
+</library>
