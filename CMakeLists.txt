@@ -19,7 +19,7 @@ catkin_package(CATKIN_DEPENDS message_runtime std_msgs)
 macro(rosperf T)
   add_executable(${T} ${T}/${T}.cpp)
   target_link_libraries(${T} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
-  add_dependencies(${T} roscpp_tutorials_gencpp)
+  add_dependencies(${T} rosperf_gencpp)
   install(TARGETS ${T}
     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 endmacro()
