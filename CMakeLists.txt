@@ -33,6 +33,8 @@ endforeach()
 
 
 install(FILES
-  launch/talker_listener.launch
+  launch/20subscriber1000.launch
+  launch/20subscriber1000_screen.launch
+  launch/20subscriber1000_screen_nodebug.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
 )
