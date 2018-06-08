@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(roscpp_tutorials)
+project(rosperf)
 
 if(NOT WIN32)
   set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-D_GLIBCXX_USE_CXX11_ABI=1;-Wall;-Wextra")
@@ -19,7 +19,7 @@ catkin_package(CATKIN_DEPENDS message_runtime std_msgs)
 macro(rosperf T)
   add_executable(${T} ${T}/${T}.cpp)
   target_link_libraries(${T} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
-  add_dependencies(${T} roscpp_tutorials_gencpp)
+  add_dependencies(${T} rosperf_gencpp)
   install(TARGETS ${T}
     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 endmacro()

@@ -27,7 +27,7 @@
 #include "ros/ros.h"
 #include "sys/time.h"
 #include "std_msgs/String.h"
-#include "roscpp_tutorials/perf.h"
+#include "rosperf/perf.h"
 
 #include <sstream> 
 #include <iostream>
@@ -88,8 +88,8 @@ int main(int argc, char **argv)
 	  cout<<frequency<<" is the send rate, error parsing"<<endl;
   }
   
-  ros::Publisher chatter_pub = n.advertise<roscpp_tutorials::perf>("chatter", frame_num+EXTRA_QUEUE_LEN);  
-  roscpp_tutorials::perf iperf;
+  ros::Publisher chatter_pub = n.advertise<rosperf::perf>("chatter", frame_num+EXTRA_QUEUE_LEN);  
+  rosperf::perf iperf;
   char *buf = new char[buff_size];
   memset(buf,96,buff_size);
   struct timeval start;

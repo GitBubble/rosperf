@@ -28,7 +28,7 @@
 // %Tag(FULLTEXT)%
 #include "ros/ros.h"
 #include "std_msgs/String.h"
-#include "roscpp_tutorials/perf.h"
+#include "rosperf/perf.h"
 #include <math.h>
 //#include <boost/thread.hpp>
 #include <thread>
@@ -109,7 +109,7 @@ void yield_report(const uint64_t& maxv, const uint64_t& minv, const uint64_t& av
 }
 
 
-void chatterCallback(const roscpp_tutorials::perf message)
+void chatterCallback(const rosperf::perf message)
 {  
   struct timeval end;
   gettimeofday(&end,NULL); // get time first :)

@@ -30,7 +30,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <nodelet/nodelet.h>
 #include <ros/ros.h>
-#include "roscpp_tutorials/perf.h"
+#include "rosperf/perf.h"
 #include "std_msgs/String.h"
 
 namespace nodelet_tutorial_math
@@ -58,7 +58,7 @@ private:
     ros::NodeHandle& nh = getNodeHandle();
     ros::NodeHandle& private_nh = getPrivateNodeHandle();
     private_nh.getParam("value", value_);
-    //pub = private_nh.advertise<roscpp_tutorials::perf>("chatter", 1000);
+    //pub = private_nh.advertise<rosperf::perf>("chatter", 1000);
 	pub = private_nh.advertise<std_msgs::String>("chatter", 1000);
     sub = private_nh.subscribe("chatter_out", 10, &Plus::callback, this);
     //timers,so we dont do main work in Init 
@@ -70,7 +70,7 @@ private:
   void timerCb(const ros::TimerEvent& timeevent)
   {
     /*(void)timeevent;  
-    boost::shared_ptr<roscpp_tutorials::perf> iperf;
+    boost::shared_ptr<rosperf::perf> iperf;
     char *buf = new char[BUFF_SIZE];
     memset(buf,96,BUFF_SIZE);
 
@@ -91,7 +91,7 @@ private:
   }
 
 
-  //void callback(const boost::shared_ptr<const roscpp_tutorials::perf> message)
+  //void callback(const boost::shared_ptr<const rosperf::perf> message)
   void callback(const std_msgs::StringPtr message)
   {
     cout<<"entering"<<endl;
