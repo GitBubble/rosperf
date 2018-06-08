@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(roscpp_tutorials)
+project(rosperf)
 
 if(NOT WIN32)
   set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-D_GLIBCXX_USE_CXX11_ABI=1;-Wall;-Wextra")
