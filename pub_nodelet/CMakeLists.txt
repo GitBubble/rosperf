@@ -12,7 +12,7 @@ catkin_package(
 )
 
 ## Create the nodelet tutorial library
-add_library(pub_nodelet src/pub.cpp)
+add_library(pub_nodelet pub_nodelet.cpp)
 target_link_libraries(pub_nodelet ${catkin_LIBRARIES})
 if(catkin_EXPORTED_LIBRARIES)
   add_dependencies(pub_nodelet ${catkin_EXPORTED_LIBRARIES})
