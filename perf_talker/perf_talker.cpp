@@ -84,7 +84,7 @@ int main(int argc, char **argv)
   }
   
   if ( frequency == 0){
-	  frequency == DEFAULT_FREQUENCY;
+	  frequency = DEFAULT_FREQUENCY;
 	  cout<<frequency<<" is the send rate, error parsing"<<endl;
   }
   
