@@ -1,0 +1,3 @@
+<launch> 
+ <node name="talker_0" pkg="rosperf" type="perf_talker"  args="1024 1000 200 0" output="screen" />
+</launch>

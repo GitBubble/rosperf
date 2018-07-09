@@ -1,0 +1,11 @@
+<launch> 
+ <node name="talker_0" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_1" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_2" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_3" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_4" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_5" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_6" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_7" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+ <node name="talker_8" pkg="rosperf" type="perf_talker"  args="100 1000 20 1" output="screen" />
+</launch>

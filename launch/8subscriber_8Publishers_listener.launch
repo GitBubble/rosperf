@@ -1,0 +1,11 @@
+<launch> 
+ <node name="listener_0" pkg="rosperf" type="perf_listener"  args="10240 1000 200 0" output="screen" />
+ <node name="listener_1" pkg="rosperf" type="perf_listener"  args="1024 1000 200 0" output="screen" />
+ <node name="listener_2" pkg="rosperf" type="perf_listener"  args="102400 1000 200 0" output="screen" />
+ <node name="listener_3" pkg="rosperf" type="perf_listener"  args="1024 1000 200 0" output="screen" />
+ <node name="listener_4" pkg="rosperf" type="perf_listener"  args="1024000 1000 200 0" output="screen" />
+ <node name="listener_5" pkg="rosperf" type="perf_listener"  args="1024 1000 200 0" output="screen" />
+ <node name="listener_6" pkg="rosperf" type="perf_listener"  args="10240 1000 200 0" output="screen" />
+ <node name="listener_7" pkg="rosperf" type="perf_listener"  args="10240 1000 200 0" output="screen" />
+ <node name="listener_8" pkg="rosperf" type="perf_listener"  args="1024 1000 200 0" output="screen" />
+</launch>
